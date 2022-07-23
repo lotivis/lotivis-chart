@@ -20,8 +20,25 @@ let dataController = lotivis.dataController();
 
 #### chart.**[id](./src/chart.js)**()
 
+#### chart.**[attr](./src/chart.js)**()
 
-## Development
+#### chart.**[skipFilterUpdate](./src/chart.js)**()
+
+#### chart.**[dataController](./src/chart.js)**()
+
+#### chart.**[margin](./src/chart.js)**()
+
+#### chart.**[dataView](./src/chart.js)**()
+
+#### chart.**[clear](./src/chart.js)**()
+
+#### chart.**[render](./src/chart.js)**()
+
+#### chart.**[run](./src/chart.js)**()
+
+#### chart.**[attr](./src/chart.js)**()
+
+## Development`
 
 ```bash
 # build module
