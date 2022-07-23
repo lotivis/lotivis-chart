@@ -18,6 +18,8 @@ let dataController = lotivis.dataController();
 
 ## API Reference
 
+### Chart
+
 #### chart.**[id](./src/chart.js)**()
 
 Returns the charts id.
@@ -50,7 +52,30 @@ Renders the chart in the passed container. **Should** be overriden by extending 
 
 Runs the render chain. For each selected element by the selector of the chart.
 
-#### chart.**[attr](./src/chart.js)**()
+### Config
+
+The lotivis config is available through the `config` field of lotivs.
+
+```
+lotivis.config.defaultMargin = 25;
+lotivis.config.chartsBackgroundColor = "pink";
+lotivis.config.tooltipOffset = 5;
+```
+
+|Name|Type|Descriptiopn| Default |
+| - | - | - | - |
+| `debug` | `bool` | Enabled debug messages. | `false` |
+| `defaultMargin` | `number` | The default margin to use for charts. | `60` |
+| `tooltipOffset` | `number` | The default offset for the space between an object an the toolbar. | `7` |
+| `barRadius` | `number` | The default radius to use for bars drawn on a chart. | `0` |
+| `selectionOpacity` | `number` | The opacity to use for selection. | `0.1` |
+| `downloadFilePrefix` | `string` | A string which is used as prefix for download. | `"ltv"` |
+| `filenameSeparator` | `string` | A string which is used as separator between components when creating a file name. | `"-"` |
+| `numberFormat` | `NumberFormatter` | The default number formatter used by all charts. | `GERMAN_NUMBER_FORMAT` |
+| `chartsBackgroundColor` | `string` | Default background color of charts. | `"white"` |
+| `chartsAxisColor` | `string` | Default axis color of charts. | `"lightgrey"` |
+| `chartsAxisStrokeWidth` | `string` | | `"1"` |
+
 
 ## Development`
 

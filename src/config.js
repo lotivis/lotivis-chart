@@ -41,21 +41,6 @@ export const config = {
    */
   numberFormat: GERMAN_NUMBER_FORMAT,
 
-  /**
-   * The default id for a container displying the current url
-   */
-  debugURLDivId: "DEBUG-ltv-url-DEBUG",
-
-  /**
-   *
-   */
-  debugDataDivId: "DEBUG-ltv-data-DEBUG",
-
-  /**
-   * The deault filename generator.
-   */
-  // filenameGenerator: DEFAULTS.filenameGenerator,
-
   /** A Boolean value indicating whether logging of third party libraries is enabled */
   thidPartyLogging: false,
 
