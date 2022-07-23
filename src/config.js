@@ -1,8 +1,5 @@
 import { GERMAN_NUMBER_FORMAT } from "./formats.js";
 
-/**
- * lotivis wide configuration
- */
 export const config = {
   /**
    * A Boolean value indicating whether the debug logging is enabled
@@ -74,10 +71,6 @@ export const config = {
 
   chartsAxisStrokeWidth: "1",
 };
-
-export function runsInBrowser() {
-  return !(typeof document === "undefined");
-}
 
 /**
  * Gets or sets whethter lotivis is in debug mode.

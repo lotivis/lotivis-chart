@@ -1,8 +1,8 @@
 export function attributable(src, attr) {
-  // Iterate attr keys and create access function for each
+  // iterate attr keys and create access function for each
   Object.keys(attr).forEach((key) => {
-    // do not override existing functions
-    if (src[key] && typeof src[key] === "function") {
+    // do not override existing symbols
+    if (src[key]) {
       return;
     }
 
