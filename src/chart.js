@@ -57,21 +57,21 @@ export default function (attr) {
       return attr.dataController;
     }
 
-    if (!(dc instanceof DataController)) {
-      throw new Error("not a controller: " + dc);
-    }
+    // if (!(dc instanceof DataController)) {
+    //   throw new Error("not a controller: " + dc);
+    // }
 
     // remove callback from existing controller
     if (attr.dataController) {
       attr.dataController.onFilter(chart.id(), null);
     }
 
-    console.log("dc", dc instanceof DataController);
+    console.log("dc", dc);
 
     attr.dataController = dc;
 
     if (attr.dataController) {
-      attr.dataController.onFilter(chart.id(), filterUpdate);
+      // attr.dataController.onFilter(chart.id(), filterUpdate);
       attr.dataController.onFilterWillChange(chart.id(), filterWillChange);
       attr.dataController.onFilterDidChange(chart.id(), filterDidChange);
       attr.dataController.onDataWillChange(chart.id(), dataWillChange);
