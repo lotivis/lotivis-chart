@@ -20,21 +20,35 @@ let dataController = lotivis.dataController();
 
 #### chart.**[id](./src/chart.js)**()
 
-#### chart.**[attr](./src/chart.js)**()
+Returns the charts id.
 
-#### chart.**[skipFilterUpdate](./src/chart.js)**()
+#### chart.**[dataController](./src/chart.js)**(_)
 
-#### chart.**[dataController](./src/chart.js)**()
+Gets or sets the data controller.
 
-#### chart.**[margin](./src/chart.js)**()
+#### chart.**[margin](./src/chart.js)**(_)
+
+Gets or sets a margins object of the chart.
+
+#### chart.**[skipFilterUpdate](./src/chart.js)**(filter, action, item)
+
+Returns whether this chart should rerender for a change of the specified `filter`. Default implementation returns `false`.
 
 #### chart.**[dataView](./src/chart.js)**()
 
-#### chart.**[clear](./src/chart.js)**()
+Calculates and returns the data view for a bar chart from the passed data controller.
 
-#### chart.**[render](./src/chart.js)**()
+#### chart.**[clear](./src/chart.js)**(container, calc, dataView)
+
+Clears the content of the passed container. May be overriden by extending charts. Default implementation selects and removes everything (`"*"`) from the conainter.
+
+#### chart.**[render](./src/chart.js)**(container, calc, dataView)
+
+Renders the chart in the passed container. **Should** be overriden by extending charts. Default implementation does nothing and only returns the chart itself.
 
 #### chart.**[run](./src/chart.js)**()
+
+Runs the render chain. For each selected element by the selector of the chart.
 
 #### chart.**[attr](./src/chart.js)**()
 
