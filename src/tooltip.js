@@ -1,3 +1,4 @@
+import "./tooltip.scss";
 import { attributable } from "./attributable.js";
 
 function postfix(src, post) {

@@ -25,11 +25,25 @@ export default function (attr) {
   // private
 
   function filterWillChange(sender, filterName, action, item) {
-    console.log("[lotivis-chart]  filterWillChange", sender, filterName);
+    console.log(
+      "[lotivis-chart]  ",
+      sender.id(),
+      "filterWillChange",
+      filterName,
+      action,
+      item
+    );
   }
 
   function filterDidChange(sender, filterName, action, item) {
-    console.log("[lotivis-chart]  filterDidChange", sender, filterName);
+    console.log(
+      "[lotivis-chart]  ",
+      sender.id(),
+      "filterDidChange",
+      filterName,
+      action,
+      item
+    );
     if (sender === chart) return console.log(attr.id, "is sender");
     if (chart.skipFilterUpdate(filterName, action, item))
       return console.log(attr.id, "skip filter update", filterName);
@@ -37,11 +51,11 @@ export default function (attr) {
   }
 
   function dataWillChange(sender, filterName, action, item) {
-    console.log("[lotivis-chart]  dataWillChange", sender, filterName);
+    console.log("[lotivis-chart]  dataWillChange", sender.id(), filterName);
   }
 
   function dataDidChange(sender, filterName, action, item) {
-    console.log("[lotivis-chart]  dataDidChange", sender, filterName);
+    console.log("[lotivis-chart]  dataDidChange", sender.id(), filterName);
     return chart.run();
   }
 
@@ -68,8 +82,6 @@ export default function (attr) {
       attr.dataController.onDataWillChange(chart.id(), null);
       attr.dataController.onDataDidChange(chart.id(), null);
     }
-
-    console.log("dc", dc);
 
     attr.dataController = dc;
 
