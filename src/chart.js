@@ -63,7 +63,10 @@ export default function (attr) {
 
     // remove callback from existing controller
     if (attr.dataController) {
-      attr.dataController.onFilter(chart.id(), null);
+      attr.dataController.onFilterWillChange(chart.id(), null);
+      attr.dataController.onFilterDidChange(chart.id(), null);
+      attr.dataController.onDataWillChange(chart.id(), null);
+      attr.dataController.onDataDidChange(chart.id(), null);
     }
 
     console.log("dc", dc);
