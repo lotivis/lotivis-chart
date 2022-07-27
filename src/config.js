@@ -9,7 +9,7 @@ export const config = {
   /**
    * The default margin to use for charts
    */
-  defaultMargin: 60,
+  defaultMargin: 30,
 
   /**
    * The default offset for the space between an object an the toolbar
