@@ -1,6 +1,6 @@
 {
   "name": "lotivis-chart",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Base chart for lotivis.js",
   "author": "Lukas Danckwerth",
   "license": "MIT",
