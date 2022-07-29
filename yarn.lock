@@ -1647,10 +1647,10 @@ log-symbols@4.1.0:
     chalk "^4.1.0"
     is-unicode-supported "^0.1.0"
 
-lotivis-data@1:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/lotivis-data/-/lotivis-data-1.0.0.tgz#cd7af82655c9ac737957d6a6be57cbbba7c39e1e"
-  integrity sha512-g73OXzUei5958TDizuvJRyfZLMsas/Bw1u8A31T+8qGyeg01oJtHEECbtPufq6o/JAlTawYIKUl3rio8eD/PNQ==
+lotivis-data@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/lotivis-data/-/lotivis-data-1.0.1.tgz#b27a99d90fa592000a5fce1292387a02ac8a29de"
+  integrity sha512-pHIPP9TwpEKQLawKPScFq3geFxKQRkU85U/1pG+3jcwVegz+Bs6IT76jCD1meWtvwnAKTf0d5dPnDCSQKqXdRg==
   dependencies:
     d3-array "^3.2.0"
     d3-dispatch "^3.0.1"
