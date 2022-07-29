@@ -21,9 +21,7 @@
   "scripts": {
     "build": "rollup --config",
     "build:watch": "rollup --config --watch",
-    "test": "mocha test/**/*-test.js",
-    "test:watch": "mocha test/**/*-test.js --watch",
-    "prepublishOnly": "rm -rf dist && yarn test && yarn build"
+    "prepublishOnly": "rm -rf dist && yarn build"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.3.0",
