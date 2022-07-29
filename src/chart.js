@@ -27,7 +27,7 @@ export default function (attr) {
   function filterWillChange(sender, filterName, action, item) {
     console.log(
       "[lotivis-chart]  ",
-      sender.id(),
+      sender ? sender.id() : null,
       "filterWillChange",
       filterName,
       action,
@@ -38,7 +38,7 @@ export default function (attr) {
   function filterDidChange(sender, filterName, action, item) {
     console.log(
       "[lotivis-chart]  ",
-      sender.id(),
+      sender ? sender.id() : null,
       "filterDidChange",
       filterName,
       action,
@@ -51,11 +51,23 @@ export default function (attr) {
   }
 
   function dataWillChange(sender, filterName, action, item) {
-    console.log("[lotivis-chart]  dataWillChange", sender.id(), filterName);
+    console.log(
+      "[lotivis-chart]  dataWillChange",
+      sender ? sender.id() : null,
+      filterName,
+      action,
+      item
+    );
   }
 
   function dataDidChange(sender, filterName, action, item) {
-    console.log("[lotivis-chart]  dataDidChange", sender.id(), filterName);
+    console.log(
+      "[lotivis-chart]  dataDidChange",
+      sender ? sender.id() : null,
+      filterName,
+      action,
+      item
+    );
     return chart.run();
   }
 
