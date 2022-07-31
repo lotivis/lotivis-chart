@@ -98,7 +98,6 @@ export default function (attr) {
     attr.dataController = dc;
 
     if (attr.dataController) {
-      // attr.dataController.onFilter(chart.id(), filterUpdate);
       attr.dataController.onFilterWillChange(chart.id(), filterWillChange);
       attr.dataController.onFilterDidChange(chart.id(), filterDidChange);
       attr.dataController.onDataWillChange(chart.id(), dataWillChange);
@@ -170,6 +169,5 @@ export default function (attr) {
     return chart;
   };
 
-  // return generated chart
   return chart;
 }
